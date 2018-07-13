@@ -38,16 +38,16 @@
 // where the birth rate value is greater
 // than 15 per 1000 chickens for that year. Store the good years in a new array named `bestYears`.
 
-const bestYears = [];
-const birthRates = [
-    { year: 1969, birthRate: 13}, 
-    { year: 1970, birthRate: 16}, 
-    { year: 1971, birthRate: 15}, 
-    { year: 1972, birthRate: 11}, 
-    { year: 1973, birthRate: 18}, 
-    { year: 1974, birthRate: 17}, 
-    { year: 1975, birthRate: 9}
-  ];
+//const bestYears = [];
+//const birthRates = [
+//    { year: 1969, birthRate: 13}, 
+  //  { year: 1970, birthRate: 16}, 
+    //{ year: 1971, birthRate: 15}, 
+   // { year: 1972, birthRate: 11}, 
+    //{ year: 1973, birthRate: 18}, 
+    //{ year: 1974, birthRate: 17}, 
+   // { year: 1975, birthRate: 9}
+  //];
 
 //for (let i = 0; i < birthRates.length; i++) {
  //   const currentYear = birthRates[i];
@@ -68,15 +68,34 @@ const birthRates = [
 
 
 
-const politician ={
-    platform:{
-        money: [ "I like it", "I have lots of it", "I do not want other people to have it"],
-        health: "I'm against it"
-    },
-    disrict: "Michigan 13"
-}
-console.log(politician.platform.money[1]) 
+//const politician ={
+//    platform:{
+//        money: [ "I like it", "I have lots of it", "I do not want other people to have it"],
+//        health: "I'm against it"
+ //   },
 
-for (const policy of politician.platform.money [2]){
-    console.log(policy) I like it, I have lots of it, I do not want other people to have it
+//    disrict: "Michigan 13"
+//console.log(politician.platform.money[1]) 
+
+//for (const policy of politician.platform.money [2]){
+//    console.log(policy) I like it, I have lots of it, I do not want other people to have it
+//}
+
+//1. Create a function that logs the result of adding two numbers that were passed in as arguments.
+//2. Create another function that logs the result of subtracting two numbers that were passed in as arguments.
+//3. Invoke each function a couple times with different argument values.
+
+function add(a,b){
+    console.log (a+b)
 }
+add (2,4)
+
+function subtract(a,b){
+    console.log (a-b)
+}
+subtract (5,3)
+
+function calculate(a,b,operator){
+    operator(a,b)
+}
+calculate (1,3,add)
